@@ -120,7 +120,7 @@ async def start(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"Вам запрещено 🚫  использовать этот бот в течение **{ban_duration}** дня(ов) по причине __{ban_reason}__ \n\n**Сообщение от администратора 🤠**")
         return
       
     await bot.send_message(
@@ -152,7 +152,7 @@ async def help(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"Вам запрещено 🚫  использовать этот бот в течение **{ban_duration}** дня(ов) по причине __{ban_reason}__ \n\n**Сообщение от администратора 🤠**")
         return
       
     await message.reply_text(
@@ -181,7 +181,7 @@ async def donate(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"Вам запрещено 🚫  использовать этот бот в течение **{ban_duration}** дня(ов) по причине __{ban_reason}__ \n\n**Сообщение от администратора 🤠**")
         return
         
     await message.reply_text(
@@ -364,7 +364,7 @@ async def pm_text(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"Вам запрещено 🚫  использовать этот бот в течение **{ban_duration}** дня(ов) по причине __{ban_reason}__ \n\n**Сообщение от администратора 🤠**")
         return
       
     if message.from_user.id == owner_id:
@@ -396,7 +396,7 @@ async def pm_media(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"Вам запрещено 🚫  использовать этот бот в течение **{ban_duration}** дня(ов) по причине __{ban_reason}__ \n\n**Сообщение от администратора 🤠**")
         return
       
     if message.from_user.id == owner_id:
