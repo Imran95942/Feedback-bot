@@ -261,18 +261,18 @@ async def ban(c, m):
         ban_log_text = f"Banning user {user_id} for {ban_duration} days for the reason {ban_reason}."
         
         if user_id == owner_id:
-            await message.reply_text("**You can Ban The Owner Vro")
+            await message.reply_text("You can Ban The Owner Vro**")
             return
         try:
             await c.send_message(
                 user_id,
-                f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**",
+                f"Вам запрещено 🚫 использовать этот бот в течение **{ban_duration}**дня(ов) по причине  __{ban_reason}__ \n\n**Сообщение от администратора 🤠**",
             )
             ban_log_text += "\n\nUser notified successfully!"
         except BaseException:
             traceback.print_exc()
             ban_log_text += (
-                f"\n\n ⚠️ User notification failed! ⚠️ \n\n`{traceback.format_exc()}`"
+                f"\n\n ⚠️ Уведомление пользователя не удалось! ⚠️ \n\n`{traceback.format_exc()}`"
             )
         await db.ban_user(user_id, ban_duration, ban_reason)
         print(ban_log_text)
@@ -292,7 +292,7 @@ async def unban(c, m):
         return
     if len(m.command) == 1:
         await m.reply_text(
-            f"Use this command to unban 😃 any user.\n\nUsage:\n\n`/unban_user user_id`\n\nEg: `/unban_user 1234567`\n This will unban user with id `1234567`.",
+            f"Используйте эту команду, чтобы разблокировать 😃 любого пользователя.\n\nUsage:\n\n`/unban_user user_id`\n\nEg: `/unban_user 1234567`\n This will unban user with id `1234567`.",
             quote=True,
         )
         return
